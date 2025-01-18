@@ -33,13 +33,13 @@ h3{
     <nav class="navbar" >
         <ul class="nav navbar-nav">
             <li><a href="/">HOME</a></li>
-            <li><a href="/bookName">BOOK-NAME</a></li>
+            <li><a href="/bookName">ITEM NAME</a></li>
     </nav>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-white" style="font-size:50px">Recommend Books</h1>
+                <h1 class="text-white" style="font-size:50px">Recommend item</h1>
 
         <!-- ## make a form in recomandation file -->
                 <form action="/recommend_books" method="post">
@@ -59,10 +59,10 @@ h3{
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top" src="{{i[2]}}">
-                            <h4 class="text-white">Book:- {{i[0]}}</h4>
-                            <h4 class="text-white">Author:- {{i[1]}}</h4>
-                            <h4 class="text-white">Publisher:- {{i[3]}}</h4>
-                            <h4 class="text-white">y_of_publi :-{{i[4]}}</h4>
+                            <h4 class="text-white">name:- {{i[0]}}</h4>
+                            <h4 class="text-white">image:- {{i[1]}}</h4>
+                            <h4 class="text-white">link:- {{i[3]}}</h4>
+                            <h4 class="text-white">ratings :-{{i[4]}}</h4>
                         </div>
                     </div>
                 </div>

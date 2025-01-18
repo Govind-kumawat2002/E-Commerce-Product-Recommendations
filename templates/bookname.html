@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>list of book name</title>
+        <title>list of item name </title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     </head>
@@ -47,13 +47,13 @@ table tr td:hover {
             </ul>
         </nav>
     
-        <h3>These are all name of all famous books</h3>
-        <p>you can copy the book Name from here. to get recommendation of the books.</p>
+        <h3>These are all name of all famous item </h3>
+        <p>you can copy the item Name from here. to get recommendation of the item .</p>
         <table id="tabl">
-            <th>BOOK NAMES</th>  
-        {% for book in list_fo_book_name %}  
+            <th>name</th>  
+        {% for item  in list_fo_item_name %}  
             <tr>
-                <td>{{ book }}</td>  
+                <td>{{ item }}</td>  
             </tr>
             {% endfor %}
         </table>

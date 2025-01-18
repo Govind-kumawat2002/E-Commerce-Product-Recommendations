@@ -29,27 +29,35 @@
         
         <ul class="nav navbar-nav">
             <li><a href="/">HOME</a></li>
-            <li><a href="/bookName">BOOK-NAME</a></li>
+            <li><a href="/bookName">item-NAME</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="text-white" style="font-size:40px">Famous 80 Books on this webiste, recommanded based on the Popularity Based Recommandation System</h1>
+                <h1 class="text-white" style="font-size:40px">Famous item on this webiste, recommanded based on the Popularity Based Recommandation System</h1>
             </div>
 
-            {% for i in range(book_name|length) %}       
+            {% for i in range(item|length) %}       
              <!-- we are executing this loop through the range -->
                 <div class="col-md-3" style="margin-top:50px">
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top" src="{{ image[i] }}">
-                            <h4 class="text-white">book-name:- {{ book_name[i] }}</h4>
-                            <h4 class="text-white">publisher:- {{ publisher[i] }}</h4>
-                            <h4 class="text-white"> author:- {{ author[i] }}</h4>
-                            <h4 class="text-white">Votes:- {{ votes[i] }}</h4>
-                            <h4 class="text-white">Rating:- {{ rating[i] }}</h4>
+                            <h4 class="text-white">itmename:- {{ itmename[i] }}</h4>
+                            <h4 class="text-white">image:- {{ image[i] }}</h4>
+                            <h4 class="text-white"> image_link:- {{ image_link[i] }}</h4>
+                            <h4 class="text-white">rating:- {{ rating[i] }}</h4>
+                            <h4 class="text-white">actual_price:- {{ actual_price[i] }}</h4>
+                            <h4 class="text-white">search_terms:- {{ search_terms[i] }}</h4>
+                            <h4 class="text-white">image_id:- {{ image_id[i] }}</h4>
+                            <h4 class="text-white">link_id:- {{ link_id[i] }}</h4>
+                            <h4 class="text-white">ratings_cleaned:- {{ ratings_cleaned[i] }}</h4>
+                            <h4 class="text-white">num_ratings_cleaned:- {{ num_ratings_cleaned[i] }}</h4>
+                            <!-- <h4 class="text-white">discount_price:- {{ discount_price[i] }}</h4>
+                            <h4 class="text-white">discount_price:- {{ discount_price[i] }}</h4> -->
+
                         </div>
                     </div>
                 </div>
