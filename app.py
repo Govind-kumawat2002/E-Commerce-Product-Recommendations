@@ -6,9 +6,9 @@ main=Flask(__name__)
 @main.route('/')
 def index():
     return render_template('index.html')
-@app.route('/bookName')
+@main.route('/bookName')
 def show_book_name():
-    book_name = list(pd.read_csv('dataset/All Electronics.csv')['Book-Title'].values)
+    book_name = list(pd.read_csv('maindata/clean_electronic.csv')['name'].values)
     return render_template("bookname.html",list_fo_book_name = book_name)
 # to get the popularity based recommandation system
 
